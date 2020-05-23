@@ -13,7 +13,10 @@
                 <h1>Техномарт</h1> <!-- Это будет скрытый заголовок -->
                 <img src="img/svg/logo-technomart.svg" width="108" height="18" alt="Техномарт">
             </a>
-            <!-- Форма поиска -->
+            <form action="https://echo.htmlacademy.ru/" method="get">
+                <label for="search" class="visually-hidden">Поиск</label>
+                <input id="search" type="search" name="search" placeholder="Поиск">
+            </form>
             <a href="">Закладки:<span>0</span></a>
             <a href="">Корзина:<span>0</span></a>
             <a href="">Оформить заказ</a>
@@ -301,6 +304,37 @@
             <p>Разработано — <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
         </div>
     </footer>
+
+    <!-- Modal window -->
+    <div class="visually-hidden">
+        <button>Закрыть</button>
+        <form action="https://echo.htmlacademy.ru/" method="post">
+            <div>
+                <label for="name-message">Ваше имя:</label>
+                <input id="name-message" type="text" name="name" placeholder="Имя Фамилия" required>
+            </div>
+            <div>
+                <label for="email-message">Ваш e-mail:</label>
+                <input id="email-message" type="email" name="email" placeholder="email@example.com" required>
+            </div>
+            <div>
+                <label for="text-message">Текст письма:</label>
+                <textarea id="text-message" name="text-message" rows="5" cols="50" placeholder="В свободной форме" required></textarea>
+            </div>
+            <div>
+                <button type="submit">Оформить заказ</button>
+            </div>
+        </form>
+    </div>
+    <!-- End of modal window -->
+
+    <!-- Map popap -->
+    <div class="visually-hidden">
+        <button>Закрыть</button>
+        <img src="img/map-popup.png" alt="Местоположение офиса на карте">
+    </div>
+    <!-- End of map popap -->
+
 </body>
 
 </html>
