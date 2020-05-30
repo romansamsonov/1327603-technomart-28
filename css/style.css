@@ -1,0 +1,579 @@
+/* Variables */
+
+:root {
+    --basic-white: #FFFFFF;
+    --basic-black: #000000;
+    --basic-red: #EE3643;
+    --basic-green: #63A63E;
+    --basic-darkgreen: #367315;
+    --basic-darkblue: #293449;
+    --basic-blue: #32425C;
+    --basic-yellow: #FFD180;
+    --basic-background: #F1F5F7;
+    --basic-greylight: #C5C5C5;
+    --basic-darkgrey: #A9A9A9;
+    --special-gold: #FFBF47;
+    --special-sky: #3BBCE3;
+    --special-lilac: #DC91D8;
+    --special-lightgreen: #8ED78F;
+    --special-lightgold: #FFC047;
+    --special-navyblue: #212A3A;
+    --click-red: #BA2732;
+    --click-darkblue: #161D29;
+    --click-blue: #1D2739;
+    --click-darkgreen: #518534;
+    --hover-green: #5FBB2D;
+    --title-popular-background: #F9F5F0;
+    --title-catalog-background: #F2F6F8;
+    --selection-background: #F7F3EC;
+}
+
+/* Global */
+
+body {
+    min-width: 960px;
+    margin: 0;
+    padding: 0;
+    font-family: "Cuprum", sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: normal;
+    background-color: var(--basic-white);
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+}
+
+/* Header */
+
+.header {
+    background-color: var(--basic-background);
+}
+
+.header-menu {
+    font-size: 18px;
+    line-height: 24px;
+    background-color: var(--basic-darkblue);
+}
+
+.header-logo {
+    background-color: var(--basic-red);
+    box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
+}
+
+.header-logo:active {
+    background-color: var(--click-red);
+}
+
+.header-button {
+    color: var(--basic-white);
+}
+
+.header-button:active {
+    color: rgba(255, 255, 255, 0.5);
+    background-color: var(--click-darkblue);
+}
+
+.header-button:last-child {
+    background-color: var(--basic-green);
+}
+
+.header-button:last-child:hover,
+.header-button:last-child:focus {
+    background-color: var(--hover-green);
+}
+
+.header-button:last-child:active {
+    background-color: var(--basic-green);
+}
+
+.info-description {
+    font-style: italic;
+    font-size: 16px;
+    line-height: 23px;
+    color: var(--basic-red);
+}
+
+.header-contacts {
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--basic-blue);
+}
+
+.phone {
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 30px;
+    color: var(--basic-red);
+}
+
+.login {
+    font-size: 21px;
+    line-height: 21px;
+    color: var(--basic-black);
+    background-color: var(--basic-white);
+}
+
+.login:hover,
+.login:focus {
+    color: var(--basic-red);
+}
+
+.login:active {
+    color: var(--basic-greylight);
+}
+
+.header-navigation {
+    background-color: var(--basic-blue);
+    box-shadow: inset 0px -5px 0px var(--basic-darkblue);
+}
+
+.menu-item {
+    list-style: none;
+}
+
+.menu-item a {
+    color: var(--basic-white);
+}
+
+.menu-item a:hover,
+.menu-item a:focus {
+    background-color: var(--basic-darkblue);
+}
+
+.menu-item a:active {
+    color: rgba(255, 255, 255, 0.5);
+    background-color: var(--click-blue);
+}
+
+/* Catalog */
+
+.catalog {
+    color: var(--basic-white);
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.materials {
+    background-color: var(--special-gold);
+}
+
+.tool {
+    background-color: var(--special-sky);
+}
+
+.equipment {
+    background-color: var(--special-lilac);
+}
+
+.discount {
+    background-color: var(--special-lightgreen);
+}
+
+.delivery {
+    background-color: var(--special-lightgold);
+}
+
+.buttons-catalog {
+    color: var(--basic-white);
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.buttons-catalog:hover,
+.buttons-catalog:focus {
+    background-color: rgba(197, 197, 197, 0.3);
+}
+
+.buttons-catalog:active {
+    background-color: rgba(169, 169, 169, 0.3);
+}
+
+.section-slider h3 {
+    font-size: 36px;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+
+.section-slider a {
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: var(--basic-white);
+    background-color: var(--basic-red);
+}
+
+.section-slider a:active {
+    background-color: var(--click-red);
+}
+
+/* Popular sections */
+
+.title-popular-section {
+    background-color: var(--title-popular-background);
+}
+
+.title-popular-section h2 {
+    font-size: 30px;
+    line-height: 30px;
+    color: var(--basic-blue);
+    text-transform: uppercase;
+}
+
+.title-popular-section a {
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: var(--basic-white);
+    background-color: var(--basic-red);
+}
+
+.title-popular-section a:active {
+    background-color: var(--click-red);
+}
+
+/* Product card */
+
+.button-buy {
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: var(--basic-white);
+    background-color: var(--basic-green);
+    box-shadow: inset 0px -3px 0px var(--basic-darkgreen);
+}
+
+.button-bookmarks {
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: var(--basic-blue);
+}
+
+.product {
+    font-family: "PT Sans", sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 20px;
+    color: var(--basic-black)
+}
+
+.product-card del {
+    font-family: "PT Sans", sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 18px;
+    color: var(--basic-darkgrey);
+}
+
+.product-price {
+    font-family: "PT Sans", sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 18px;
+    color: var(--basic-white);
+    background-color: var(--basic-red);
+}
+
+/* Services */
+
+.services {
+    color: var(--basic-black);
+    background-color: var(--basic-background);
+}
+
+.services h2 {
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.services p {
+    font-family: "PT Sans", sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+}
+
+.button-service button {
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 30px;
+    color: var(--basic-white);
+    background-color: var(--basic-blue);
+}
+
+.button-service button:hover,
+.button-service button:focus {
+    background-color: var(--basic-darkblue);
+}
+
+.button-service button:active {
+    color: var(--basic-blue);
+    background-color: var(--basic-white);
+}
+
+.service-item h3 {
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: var(--basic-blue);
+}
+
+/* Info company */
+
+.info-company h2 {
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.info-company p {
+    font-family: "PT Sans", sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+}
+
+.info-company a {
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: var(--basic-white);
+    background-color: var(--basic-red);
+}
+
+.info-company a:active {
+    background-color: var(--click-red);
+}
+
+/* Footer */
+
+.footer {
+    background-color: var(--basic-blue);
+}
+
+.footer-logo {
+    background-color: var(--basic-red);
+    box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
+}
+
+.footer-logo:active {
+    background-color: var(--click-red);
+}
+
+.footer-address {
+    color: var(--basic-background);
+}
+
+.footer-menu-item,
+.menu-catalog-item {
+    list-style: none;
+}
+
+.footer-menu-item a {
+    color: var(--basic-background);
+}
+
+.menu-catalog-item a {
+    color: var(--basic-yellow);
+}
+
+.footer-menu-item a:hover,
+.footer-menu-item a:focus,
+.menu-catalog-item a:hover,
+.menu-catalog-item a:focus {
+    text-decoration-line: underline;
+}
+
+.footer-menu-item a:active,
+.menu-catalog-item a:active {
+    opacity: 0.5;
+    text-decoration-line: none;
+}
+
+.footer-contacts {
+    background-color: var(--basic-darkblue);
+}
+
+.footer-contacts p {
+    font-size: 16px;
+    line-height: 18px;
+    color: var(--basic-white);
+}
+
+.social-button {
+    list-style: none;
+}
+
+.social-button a {
+    color: var(--basic-white);
+}
+
+.feedback {
+    color: var(--basic-yellow);
+}
+
+.feedback:hover,
+.feedback:focus {
+    text-decoration-line: underline;
+}
+
+.feedback:active {
+    color: var(--basic-red);
+    text-decoration-line: none;
+}
+
+/* catalog.html */
+
+/* Header */
+
+.basket-full {
+    background-color: var(--basic-red);
+}
+
+.basket-full:active {
+    background-color: var(--click-red);
+}
+
+.user-name a {
+    font-size: 21px;
+    line-height: 21px;
+    color: var(--basic-black);
+}
+
+.user-name a:active {
+    color: var(--basic-greylight);
+}
+
+.user-button a {
+    font-size: 16px;
+    line-height: 18px;
+    color: var(--basic-blue);
+}
+
+.user-button a:hover,
+.user-button a:focus {
+    color: var(--basic-red);
+}
+
+.user-button a:active {
+    color: var(--basic-greylight);
+}
+
+/* Main */
+
+.breadcrumbs {
+    list-style: none;
+}
+
+.breadcrumbs-item a {
+    font-family: "PT Sans", sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: var(--basic-black);
+}
+
+.title-catalog {
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: var(--basic-blue);
+    background-color: var(--title-catalog-background);
+}
+
+.selection {
+    text-transform: uppercase;
+}
+
+.filter-form h3 {
+    font-family: "PT Sans", sans-serif;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 18px;
+    color: var(--basic-black);
+    background-color: var(--selection-background);
+}
+
+.title-selection {
+    font-family: "PT Sans", sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 30px;
+    color: var(--basic-black);
+}
+
+.price input {
+    font-family: "PT Sans", sans-serif;
+    font-size: 17px;
+    line-height: 18px;
+    color: var(--basic-black);
+    background-color: var(--selection-background);
+}
+
+.selection-list {
+    font-family: "PT Sans", sans-serif;
+    font-size: 15px;
+    line-height: 19px;
+    color: var(--basic-black);
+    list-style: none;
+}
+
+.button-selection {
+    font-family: "PT Sans", sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    color: var(--basic-black);
+    background-color: var(--basic-white);
+}
+
+.sorting {
+    font-family: "PT Sans", sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: var(--basic-black);
+}
+
+.sorting a {
+    opacity: 0.3;
+}
+
+.info-text {
+    color: var(--basic-black);
+    background-color: var(--basic-background);
+}
+
+.info-text h2 {
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.info-text p {
+    font-family: "PT Sans", sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+}
