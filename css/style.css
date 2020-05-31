@@ -26,6 +26,7 @@
     --title-popular-background: #F9F5F0;
     --title-catalog-background: #F2F6F8;
     --selection-background: #F7F3EC;
+    --font-pt-sans: "PT Sans", "Arial", sans-serif;
 }
 
 /* Global */
@@ -270,7 +271,7 @@ img {
 }
 
 .product {
-    font-family: "PT Sans", sans-serif;
+    font-family: var(--font-pt-sans);
     font-weight: bold;
     font-size: 18px;
     line-height: 20px;
@@ -278,7 +279,7 @@ img {
 }
 
 .product-card del {
-    font-family: "PT Sans", sans-serif;
+    font-family: var(--font-pt-sans);
     font-weight: bold;
     font-size: 17px;
     line-height: 18px;
@@ -286,7 +287,7 @@ img {
 }
 
 .product-price {
-    font-family: "PT Sans", sans-serif;
+    font-family: var(--font-pt-sans);
     font-weight: bold;
     font-size: 17px;
     line-height: 18px;
@@ -309,7 +310,7 @@ img {
 }
 
 .services p {
-    font-family: "PT Sans", sans-serif;
+    font-family: var(--font-pt-sans);
     font-size: 13px;
     line-height: 24px;
 }
@@ -350,7 +351,7 @@ img {
 }
 
 .info-company p {
-    font-family: "PT Sans", sans-serif;
+    font-family: var(--font-pt-sans);
     font-size: 13px;
     line-height: 24px;
 }
@@ -488,7 +489,7 @@ img {
 }
 
 .breadcrumbs-item a {
-    font-family: "PT Sans", sans-serif;
+    font-family: var(--font-pt-sans);
     font-size: 13px;
     line-height: 18px;
     text-transform: uppercase;
@@ -508,7 +509,7 @@ img {
 }
 
 .filter-form h3 {
-    font-family: "PT Sans", sans-serif;
+    font-family: var(--font-pt-sans);
     font-weight: normal;
     font-size: 13px;
     line-height: 18px;
@@ -517,7 +518,7 @@ img {
 }
 
 .title-selection {
-    font-family: "PT Sans", sans-serif;
+    font-family: var(--font-pt-sans);
     font-weight: bold;
     font-size: 17px;
     line-height: 30px;
@@ -525,7 +526,7 @@ img {
 }
 
 .price input {
-    font-family: "PT Sans", sans-serif;
+    font-family: var(--font-pt-sans);
     font-size: 17px;
     line-height: 18px;
     color: var(--basic-black);
@@ -533,7 +534,7 @@ img {
 }
 
 .selection-list {
-    font-family: "PT Sans", sans-serif;
+    font-family: var(--font-pt-sans);
     font-size: 15px;
     line-height: 19px;
     color: var(--basic-black);
@@ -541,7 +542,7 @@ img {
 }
 
 .button-selection {
-    font-family: "PT Sans", sans-serif;
+    font-family: var(--font-pt-sans);
     font-size: 13px;
     line-height: 18px;
     color: var(--basic-black);
@@ -549,7 +550,7 @@ img {
 }
 
 .sorting {
-    font-family: "PT Sans", sans-serif;
+    font-family: var(--font-pt-sans);
     font-size: 13px;
     line-height: 18px;
     text-transform: uppercase;
@@ -573,7 +574,7 @@ img {
 }
 
 .info-text p {
-    font-family: "PT Sans", sans-serif;
+    font-family: var(--font-pt-sans);
     font-size: 13px;
     line-height: 24px;
 }
