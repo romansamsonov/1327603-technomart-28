@@ -178,8 +178,15 @@ img {
     color: var(--basic-white);
 }
 
-.header-search input:focus {
+.header-search input:focus,
+.header-search button:focus {
     background-color: var(--basic-white);
+    opacity: 1;
+}
+
+.header-search input:focus + button path,
+.header-search button:focus path {
+    fill: var(--basic-red);
 }
 
 .header-button {
