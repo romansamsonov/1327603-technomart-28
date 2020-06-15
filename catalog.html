@@ -112,7 +112,7 @@
                     <a href="">Инструмент</a>
                 </li>
                 <li class="breadcrumbs-item">
-                    <a href="">Перфораторы</a>
+                    <a>Перфораторы</a>
                 </li>
             </ol>
             <h2 class="title-catalog">Перфораторы</h2>
@@ -145,33 +145,33 @@
                             <legend class="title-choice">Производители:</legend>
                             <ul class="choice-list checkbox-list">
                                 <li class="checkbox-item">
-                                    <label>
-                                        <input type="checkbox" class="checkbox" name="bosch" checked>
-                                        <span>Bosch</span>
+                                    <label class="checkbox">
+                                        <input type="checkbox" class="checkbox-input visually-hidden" name="bosch" checked>
+                                        <span class="checkbox-text">Bosch</span>
                                     </label>
                                 </li>
                                 <li class="checkbox-item">
-                                    <label>
-                                        <input type="checkbox" class="checkbox" name="interskol">
-                                        <span>Интерскол</span>
+                                    <label class="checkbox">
+                                        <input type="checkbox" class="checkbox-input visually-hidden" name="interskol">
+                                        <span class="checkbox-text">Интерскол</span>
                                     </label>
                                 </li>
                                 <li class="checkbox-item">
-                                    <label>
-                                        <input type="checkbox" class="checkbox" name="makita" checked>
-                                        <span>Makita</span>
+                                    <label class="checkbox">
+                                        <input type="checkbox" class="checkbox-input visually-hidden" name="makita" checked>
+                                        <span class="checkbox-text">Makita</span>
                                     </label>
                                 </li>
                                 <li class="checkbox-item">
-                                    <label>
-                                        <input type="checkbox" class="checkbox" name="dewalt">
-                                        <span>Dewalt</span>
+                                    <label class="checkbox">
+                                        <input type="checkbox" class="checkbox-input visually-hidden" name="dewalt">
+                                        <span class="checkbox-text">Dewalt</span>
                                     </label>
                                 </li>
                                 <li class="checkbox-item">
-                                    <label>
-                                        <input type="checkbox" class="checkbox" name="hitachi">
-                                        <span>Hitachi</span>
+                                    <label class="checkbox">
+                                        <input type="checkbox" class="checkbox-input visually-hidden" name="hitachi">
+                                        <span class="checkbox-text">Hitachi</span>
                                     </label>
                                 </li>
                             </ul>
@@ -180,15 +180,15 @@
                             <legend class="title-choice">Питание:</legend>
                             <ul class="choice-list radio-list">
                                 <li class="radio-item">
-                                    <label>
-                                        <input type="radio" class="radio" name="powered" value="battery" checked>
-                                        <span>Аккумуляторные</span>
+                                    <label class="radio">
+                                        <input type="radio" class="radio-input visually-hidden" name="powered" value="battery" checked>
+                                        <span class="radio-text">Аккумуляторные</span>
                                     </label>
                                 </li>
                                 <li class="radio-item">
-                                    <label>
-                                        <input type="radio" class="radio" name="powered" value="mains-power">
-                                        <span>Сетевые</span>
+                                    <label class="radio">
+                                        <input type="radio" class="radio-input visually-hidden" name="powered" value="mains-power">
+                                        <span class="radio-text">Сетевые</span>
                                     </label>
                                 </li>
                             </ul>
@@ -456,16 +456,13 @@
     </footer>
 
     <!-- Modal window -->
-    <div class="visually-hidden">
-        <div>
-            <img src="img/svg/icon-mark.svg" alt="">
-            <span>Товар добавлен в корзину!</span>
-        </div>
-        <div>
+    <div class="modal basket-popap">
+        <span class="basket-popap-text">Товар добавлен в корзину!</span>
+        <div class="basket-popap-button">
             <a href="">Оформить заказ</a>
-            <button>Продолжить покупки</button>
+            <button type="button">Продолжить покупки</button>
         </div>
-        <button>Закрыть</button>
+        <button class="modal-button-close" type="button" aria-label="Закрыть модальное окно"></button>
     </div>
     <!-- End of modal window -->
 

@@ -106,6 +106,10 @@
                         <a href="catalog.html" class="slider-button">Открыть каталог</a>
                     </li>
                 </ul>
+                <div class="slider-arrows">
+                    <button type="button" class="slider-arrows-left" aria-label="Предыдущий слайд"></button>
+                    <button type="button" class="slider-arrows-right" aria-label="Следующий слайд"></button>
+                </div>
                 <div class="slider-controls">
                     <button type="button" aria-label="Первый слайд"></button>
                     <button class="current" type="button" aria-label="Второй слайд"></button>
@@ -297,7 +301,7 @@
             <section class="company-contacts">
                 <h2>Контакты</h2>
                 <p>Вы можете забрать товар сами, заехав в наш офис:</p>
-                <img src="img/map.png" width="300" height="158" alt="Местоположение офиса на карте">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4753.585020910322!2d30.319248984934845!3d59.938176987561086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1592252923332!5m2!1sru!2sru" width="300" height="158" style="border:0;" allowfullscreen="" aria-hidden="false" title="Офис компании по адресу ул. Большая Конюшенная 19, Санкт-Петербург"></iframe>
                 <a href="" class="info-button">Заблудились? Напишите нам!</a>
             </section>
         </div>
@@ -389,38 +393,34 @@
     </footer>
 
     <!-- Modal window -->
-    <div class="visually-hidden">
-        <form action="https://echo.htmlacademy.ru/" method="post">
-            <div>
-                <label>
+    <div class="modal write-us-popap">
+        <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
+            <div class="form-field">
+                <label class="form-field-label form-field-name">
                     <span>Ваше имя:</span>
-                    <input type="text" name="name" placeholder="Имя Фамилия" required>
+                    <input class="form-field-input" type="text" name="name" placeholder="Имя Фамилия" required>
                 </label>
-            </div>
-            <div>
-                <label>
+                <label class="form-field-label form-field-email">
                     <span>Ваш e-mail:</span>
-                    <input type="email" name="email" placeholder="email@example.com" required>
+                    <input class="form-field-input" type="email" name="email" placeholder="email@example.com" required>
                 </label>
-            </div>
-            <div>
-                <label>
+                <label class="form-field-label form-field-text">
                     <span>Текст письма:</span>
-                    <textarea name="text-message" rows="5" cols="50" placeholder="В свободной форме" required></textarea>
+                    <textarea class="form-field-input form-field-textarea" name="text-message" placeholder="В свободной форме" required></textarea>
                 </label>
             </div>
-            <div>
-                <button type="submit">Оформить заказ</button>
+            <div class="form-field-button">
+                <button class="modal-button-submit" type="submit">Отправить</button>
             </div>
         </form>
-        <button>Закрыть</button>
+        <button class="modal-button-close" type="button" aria-label="Закрыть модальное окно"></button>
     </div>
     <!-- End of modal window -->
 
     <!-- Map popap -->
-    <div class="visually-hidden">
-        <img src="img/map-popup.png" alt="Местоположение офиса на карте">
-        <button>Закрыть</button>
+    <div class="modal map-popap">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4753.585020910322!2d30.319248984934845!3d59.938176987561086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1592252923332!5m2!1sru!2sru" width="300" height="158" style="border:0;" allowfullscreen="" aria-hidden="false" title="Офис компании по адресу ул. Большая Конюшенная 19, Санкт-Петербург"></iframe>
+        <button class="modal-button-close" type="button" aria-label="Закрыть модальное окно"></button>
     </div>
     <!-- End of map popap -->
 
