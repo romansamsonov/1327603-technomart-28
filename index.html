@@ -26,9 +26,9 @@
                     </button>
                 </form>
                 <div class="header-button">
-                    <a href="" class="button-bookmark">Закладки: <span>0</span></a>
-                    <a href="" class="button-cart">Корзина: <span>0</span></a>
-                    <a href="">Оформить заказ</a>
+                    <a href="" class="header-button-link button-bookmark">Закладки: <span>0</span></a>
+                    <a href="" class="header-button-link button-cart">Корзина: <span>0</span></a>
+                    <a href="" class="header-button-link">Оформить заказ</a>
                 </div>
             </div>
         </div>
@@ -107,12 +107,12 @@
                     </li>
                 </ul>
                 <div class="slider-arrows">
-                    <button type="button" class="slider-arrows-left" aria-label="Предыдущий слайд"></button>
-                    <button type="button" class="slider-arrows-right" aria-label="Следующий слайд"></button>
+                    <button type="button" class="arrow slider-arrow-left" aria-label="Предыдущий слайд"></button>
+                    <button type="button" class="arrow slider-arrow-right" aria-label="Следующий слайд"></button>
                 </div>
                 <div class="slider-controls">
-                    <button type="button" aria-label="Первый слайд"></button>
-                    <button class="current" type="button" aria-label="Второй слайд"></button>
+                    <button class="button-controls" type="button" aria-label="Первый слайд"></button>
+                    <button class="button-controls current" type="button" aria-label="Второй слайд"></button>
                 </div>
             </div>
             <div class="catalog-card discount">
@@ -238,8 +238,8 @@
         </section>
         <section class="services">
             <div class="container">
-                <h2>Сервисы</h2>
-                <p>Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+                <h2 class="services-title">Сервисы</h2>
+                <p class="services-text">Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
                 <div class="service-slider">
                     <div class="button-slider">
                         <button class="button-service button-current">Доставка</button>
@@ -248,31 +248,23 @@
                     </div>
                     <ul class="service-list">
                         <li class="service-item service-current">
-                            <h3>Доставка</h3>
-                            <p>
-                                Мы с удовольствием доставим ваш товар прямо<br>
-                                к вашему подъезду совершенно бесплатно!<br>
-                                Ведь мы неплохо заработаем,<br>
-                                поднимая его на ваш этаж!
+                            <h3 class="service-item-title">Доставка</h3>
+                            <p class="service-item-text service-item-text-delivery">
+                                Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! <br> Ведь мы неплохо заработаем, <br> поднимая его на ваш этаж!
                             </p>
                             <img class="delivery-image" src="img/delivery-image.png" width="465" height="285" alt="Доставка товара">
                         </li>
                         <li class="service-item">
-                            <h3>Гарантия</h3>
-                            <p>
-                                Если купленный у нас товар поломается или заискрит,<br>
-                                а также в случае пожара, спровоцированного его<br>
-                                возгоранием, вы всегда можете быть уверены в нашей<br>
-                                гарантии. Мы обменяем сгоревший товар на новый.<br>
-                                Дом уж восстановите как-нибудь сами.
+                            <h3 class="service-item-title">Гарантия</h3>
+                            <p class="service-item-text service-item-text-guarantee">
+                                Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.
                             </p>
                             <img class="guarantee-image" src="img/guarantee-image.png" width="389" height="283" alt="Гарантия товара">
                         </li>
                         <li class="service-item">
-                            <h3>Кредит</h3>
-                            <p>
-                                Залезть в долговую яму стало проще!<br>
-                                Кредитные консультанты придут вам на помощь.
+                            <h3 class="service-item-title">Кредит</h3>
+                            <p class="service-item-text service-item-text-credit">
+                                Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.
                             </p>
                             <a href="">Отправить заявку</a>
                             <img class="credit-image" src="img/credit-image.png" width="465" height="285" alt="Кредит">
@@ -283,26 +275,25 @@
         </section>
         <div class="info-section container">
             <section class="info-company">
-                <h2>Компания «Техномарт»</h2>
-                <p>
+                <h2 class="info-section-title">Компания «Техномарт»</h2>
+                <p class="info-section-text">
                     Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
                 </p>
-                <p>
-                    Мы можем доставить ваш товар в самые отдаленные точки России!
-                    Техномарт работает со многими транспортными компаниями:
+                <p class="info-section-text">
+                    Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными компаниями:
                 </p>
                 <ul class="partners">
                     <li>Деловые линии</li>
                     <li>Автотрейдинг</li>
                     <li>ЖелДорЭкспедиция</li>
                 </ul>
-                <a href="" class="info-button">Подробнее о компании</a>
+                <a href="" class="info-link">Подробнее о компании</a>
             </section>
             <section class="company-contacts">
-                <h2>Контакты</h2>
-                <p>Вы можете забрать товар сами, заехав в наш офис:</p>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4753.585020910322!2d30.319248984934845!3d59.938176987561086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1592252923332!5m2!1sru!2sru" width="300" height="158" style="border:0;" allowfullscreen="" aria-hidden="false" title="Офис компании по адресу ул. Большая Конюшенная 19, Санкт-Петербург"></iframe>
-                <a href="" class="info-button">Заблудились? Напишите нам!</a>
+                <h2 class="info-section-title">Контакты</h2>
+                <p class="info-section-text">Вы можете забрать товар сами, заехав в наш офис:</p>
+                <img class="info-section-map" src="img/map.png" width="300" height="158" alt="Офис компании по адресу ул. Большая Конюшенная 19, Санкт-Петербург">
+                <a href="form.html" class="info-link write-us-button">Заблудились? Напишите нам!</a>
             </section>
         </div>
     </main>
@@ -424,6 +415,7 @@
     </div>
     <!-- End of map popap -->
 
+    <script src="js/app.js"></script>
 </body>
 
 </html>
