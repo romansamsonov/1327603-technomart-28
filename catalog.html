@@ -6,7 +6,7 @@
     <title>HTML Academy: Техномарт - каталог</title>
     <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/min-style.css" rel="stylesheet">
 </head>
 
 <body class="page-body">
@@ -373,7 +373,7 @@
     <footer class="footer">
         <div class="footer-navigation container">
             <div class="footer-navigation-wrapper">
-                <a href="" class="footer-logo">
+                <a href="index.html" class="footer-logo">
                     <img src="img/svg/logo-technomart.svg" width="137" height="22" alt="Техномарт">
                 </a>
                 <p class="footer-address">
@@ -455,18 +455,18 @@
         </div>
     </footer>
 
-    <!-- Modal window -->
-    <div class="modal basket-popap">
-        <span class="basket-popap-text">Товар добавлен в корзину!</span>
-        <div class="basket-popap-button">
+    <!-- Basket popup -->
+    <div class="modal basket-popup">
+        <span class="basket-popup-text">Товар добавлен в корзину!</span>
+        <div class="basket-popup-button">
             <a href="">Оформить заказ</a>
-            <button type="button">Продолжить покупки</button>
+            <button class="button-continue" type="button">Продолжить покупки</button>
         </div>
         <button class="modal-button-close" type="button" aria-label="Закрыть модальное окно"></button>
     </div>
-    <!-- End of modal window -->
+    <!-- End of basket popup -->
 
-    <script src="js/app.js"></script>
+    <script src="js/min-app.js"></script>
 </body>
 
 </html>
