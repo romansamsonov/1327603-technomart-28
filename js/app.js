@@ -6,16 +6,16 @@ let writeUsPopup = document.querySelector(".write-us-popup");
 if (writeUsPopup) {
     let writeUsClose = writeUsPopup.querySelector(".modal-button-close");
     let writeUsForm = writeUsPopup.querySelector(".modal-form");
-    let writeUsName = writeUsPopup.querySelector(".form-field-name");
-    let writeUsEmail = writeUsPopup.querySelector(".form-field-email");
+    let writeUsName = writeUsPopup.querySelector(".form-field-name input");
+    let writeUsEmail = writeUsPopup.querySelector(".form-field-email input");
     let writeUsTextarea = writeUsPopup.querySelector(".form-field-textarea");
 
     let isStorageSupport = true;
     let storage = "";
 
     try {
-        storage = localStorage.getItem("name");
-        storage = localStorage.getItem("email");
+        storage = localStorage.getItem("m-name");
+        storage = localStorage.getItem("e-mail");
     } catch (err) {
         isStorageSupport = false;
     }
@@ -47,8 +47,8 @@ if (writeUsPopup) {
             writeUsPopup.classList.add("modal-error");
         } else {
             if (isStorageSupport) {
-                localStorage.setItem("name", writeUsName.value);
-                localStorage.setItem("email", writeUsEmail.value);
+                localStorage.setItem("m-name", writeUsName.value);
+                localStorage.setItem("e-mail", writeUsEmail.value);
             }
         }
     });
